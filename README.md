@@ -19,6 +19,7 @@ Once you have virtual environments installed, you're ready to setup the server!
 	$cd food_api
 	$virtualenv venv
 	$source venv/bin/activate
+	$pip install -r requirements.txt
 	$python
 	>>from food_api import db
 	>>db.create_all()
