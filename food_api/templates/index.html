@@ -198,11 +198,15 @@
 
 			}
 			console.log(o); //the array of objects is now a single object with many key-value pairs
+	        
+			//add any additional data points to the data to post to the food api
 	        if(water){ o["water"].push(water)};
 	        if(environments){o["environments"].push(environments)};
 	        if(social_groups){o["social_groups"].push(social_groups)};
 	        if(policies){o["policies"].push(policies)};
 	        if(fuels){o["fuels"].push(fuels)};
+
+	        //event handler functions, currently the Failed function isn't called on error, not sure why
 			function addComplete(evt) {
 				location.reload();
 			  	alert("The scenario has been added.");
@@ -216,9 +220,7 @@
 			xmlhttp.addEventListener("error", addFailed, false);
 			xmlhttp.open("POST", "/api/food", true);
 			xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-			xmlhttp.send(JSON.stringify(o), function(msg){
-			
-			});
+			xmlhttp.send(JSON.stringify(o));
 		});
 	</script>
 </div>
