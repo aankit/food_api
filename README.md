@@ -40,5 +40,10 @@ The backend is currently using Flask, SQL Alchmey, SQLite, and Flask-Restless to
 
 The database is centered on food - meaning each one of the tables at the non-food endpoints can be related to a food, but not to each other. This can be changed easily, but for now this change is pending specific feedback from users.
 
+To query the database following the Flask-Restless documentation:
+
+[Flask Search Query Documentation](http://flask-restless.readthedocs.org/en/latest/searchformat.html#searchformat)
+
+
 
 
