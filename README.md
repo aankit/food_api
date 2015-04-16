@@ -29,25 +29,25 @@ Once you have virtual environments installed, you're ready to setup the server!
 
 ###API Documentation
 
-Currently you can GET data from and POST data to **/api/entity**. It will accept the following fields in JSON format:
+Currently you can GET data from and POST data to **/api/entity**. It accepts JSON objects with the following fields with string data up to 140 characters:
 
-* individual: "String",
-* organization: "String",
-* art: "String",
-* intervention: "String",
-* activism: "String",
-* food: "String",
-* water: "String",
-* fuel: "String",
-* non_profit: "String",
-* for_profit: "String",
-* b_corp: "String",
-* community: "String",
-* national: "String",
-* local: "String",
-* climate: "String",
-* health: "String",
-* social: "String"
+* individual
+* organization
+* art
+* intervention
+* activism
+* food
+* water
+* fuel
+* non_profit
+* for_profit
+* b_corp
+* community
+* national
+* local
+* climate
+* health
+* social
 
 The API allows clients to GET and POST to individual database tables. To query the database follow the Flask-Restless documentation:
 
