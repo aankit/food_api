@@ -31,7 +31,6 @@ Once you have virtual environments installed, you're ready to setup the server!
 
 Currently you can GET data from and POST data to **/api/entity**. It will accept the following fields in JSON format:
 
-q: {
 	* individual: "String",
     * organization: "String",
     * art: "String",
@@ -49,8 +48,6 @@ q: {
     * climate: "String",
     * health: "String",
     * social: "String"
-
-}
 
 The API allows clients to GET and POST to individual database tables. To query the database follow the Flask-Restless documentation:
 
