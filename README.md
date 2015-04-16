@@ -29,18 +29,30 @@ Once you have virtual environments installed, you're ready to setup the server!
 
 ###API Documentation
 
-The backend is currently using Flask, SQL Alchmey, SQLite, and Flask-Restless to create the API interface. The API allows clients to GET and POST to individual database tables. The endpoints are:
+Currently you can GET data from and POST data to **/api/entity**. It will accept the following fields in JSON format:
 
-+ /api/food
-+ /api/water
-+ /api/environment
-+ /api/social
-+ /api/policy
-+ /api/fuel
+q: {
+	individual: "String",
+    organization: "String",
+    art: "String",
+    intervention: "String",
+    activism: "String",
+    food: "String",
+    water: "String",
+    fuel: "String",
+    non_profit: "String",
+    for_profit: "String",
+    b_corp: "String",
+    community: "String",
+    national: "String",
+    local: "String",
+    climate: "String",
+    health: "String",
+    social: "String"
 
-The database is centered on food - meaning each one of the tables at the non-food endpoints can be related to a food, but not to each other. This can be changed easily, but for now this change is pending specific feedback from users.
+}
 
-To query the database following the Flask-Restless documentation:
+The API allows clients to GET and POST to individual database tables. To query the database follow the Flask-Restless documentation:
 
 [Flask Search Query Documentation](http://flask-restless.readthedocs.org/en/latest/searchformat.html#searchformat)
 
