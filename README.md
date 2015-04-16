@@ -32,23 +32,23 @@ Once you have virtual environments installed, you're ready to setup the server!
 Currently you can GET data from and POST data to **/api/entity**. It will accept the following fields in JSON format:
 
 q: {
-	individual: "String",
-    organization: "String",
-    art: "String",
-    intervention: "String",
-    activism: "String",
-    food: "String",
-    water: "String",
-    fuel: "String",
-    non_profit: "String",
-    for_profit: "String",
-    b_corp: "String",
-    community: "String",
-    national: "String",
-    local: "String",
-    climate: "String",
-    health: "String",
-    social: "String"
+	* individual: "String",
+    * organization: "String",
+    * art: "String",
+    * intervention: "String",
+    * activism: "String",
+    * food: "String",
+    * water: "String",
+    * fuel: "String",
+    * non_profit: "String",
+    * for_profit: "String",
+    * b_corp: "String",
+    * community: "String",
+    * national: "String",
+    * local: "String",
+    * climate: "String",
+    * health: "String",
+    * social: "String"
 
 }
 
